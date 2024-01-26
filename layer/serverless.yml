@@ -1,0 +1,15 @@
+org: joadva
+app: my-aws-node-express-api-app
+service: aws-node-http-api-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  stage: dev
+
+layers:
+  CommonModules:
+    path: layersCommonModules
+
